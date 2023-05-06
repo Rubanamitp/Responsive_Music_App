@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+html{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: rgb(245, 217, 221);
+}
+.musicContainer #title{
+    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2rem;
+}
+.musicContainer #artist{
+    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.imageContainer img{
+    width: 230px;
+    height: 240px;
+    border-radius: 70%;
+    object-fit: cover;
+    box-shadow: 1rem 1rem 1.5rem 0 rgba(0, 0, 0, 0.3);
+    
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    
+    
+}
+.container h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    font-style: italic;
+
+    
+}
+ .musicContainer #title{
+    font-size: 2.5rem;
+}
+.musicContainer{
+    width: 50%;
+    height: 75vh;
+    margin-top: 50px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:280px;
+    box-shadow: 0 1rem 2rem 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 6px 0;
+    margin-bottom: 100px;
+    
+}
+.gif{
+    width: 80px;
+    border: 3px solid black ;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 114, 114);
+    
+}
+#gif{
+    opacity: 0;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+#previous{
+    padding: 10px 30px;
+    margin: 0 20px;
+}
+.icons #play{
+padding: 10px 25px;
+margin: 10px auto;
+background-color: black;
+color: white;
+width: 1rem;
+border-radius: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+
+
+}
+
+.icons #play:hover{
+    background-color:lightpink;
+    color: black;
+}
+#next{
+padding: 10px 30px;
+margin: 0 20px;
+}
+.anime{
+    animation: rotation 2s linear infinite;
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@media (min-width:200px) and (max-width:1020px){
+    .musicContainer{
+        height: 74vh;
+        width: 80%;
+    }
+    .imageContainer img{
+        width: 100px;
+    height: 100px;
+    }
+    #title{
+        padding: 6px;
+        font-size: 2.5rem;
+    }
+    #artist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        font-size: 2rem;
+    }
+   .icons{
+    width: 8rem;
+   }
+   .container h1{
+    font-size: 2.5rem;
+   }
+   .musicContainer h1{
+    font-size:2rem;
+    padding: 1rem 0;
+   }
+   #artist{
+    font-size: 1.5rem;
+   }
+}
+@media (min-width:177px) and (max-width:200px){
+    body{
+        background-color: rgb(236, 157, 157);
+    }
+    .imageContainer img{
+        width: 80px;
+    height: 80px;
+    margin: 2rem auto;
+    }
+    
+   
+    .container h1{
+        font-size: 2rem;
+       }
+       .musicContainer{
+        width: 92vw;
+       }
+       .musicContainer #title{
+        font-size:1.5rem;
+        padding: 1rem 0;
+       }
+       #artist{
+        font-size: 1rem;
+       }
+       .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 3rem;
+        margin: 1rem 1rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        padding: 0 3rem;
+    }
+    .icons i{
+        padding:0  10px;
+    }
+
+
+}
+@media (max-width:177px){
+    body{
+        background-color: rgb(231, 236, 157);
+    }
+    .imageContainer img{
+        width: 80px;
+    height: 80px;
+    margin: 2rem auto;
+    }
+    
+   
+    .container h1{
+        font-size: 2rem;
+       }
+       .musicContainer{
+        width: 92vw;
+       }
+       .musicContainer #title{
+        font-size:1.5rem;
+        padding: 1rem 0;
+       }
+       #artist{
+        font-size: 1rem;
+        margin-top: 4rem 0;
+       }
+       .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 3rem;
+        margin: 1rem 1rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        padding: 0 3rem;
+        flex-wrap: wrap;
+    }
+    .icons i{
+        padding:0  10px;
+    }
+    
+
+
+
+}
